@@ -4,7 +4,7 @@ _<h4 align="center">"It was mandatory, but it's still cool..."</h4>_
 
 This is a repository made for teaching english sentences's structure, based on the Spacy python module.
 
-This repository comes with two part, the [frontend](frontend) application, and the [backend](backend) server.
+This repository comes with two part, the [frontend](frontend) application, and the [server](server) server.
 
 ___
 
