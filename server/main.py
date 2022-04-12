@@ -1,14 +1,20 @@
 from flask import Flask
 
+from translator import TRANSLATE
+from analyses import ANALYSE
+
 API = Flask(__name__)
+API.register_blueprint(TRANSLATE)
+API.register_blueprint(ANALYSE)
 
 @API.get("/")
 def homepage():
-    return "Hello World !"
+    return {
+        "welcome": "Welcome to the NLP API, by FGES",
+        "description": "See the documentation at /docs in order to start using the API."
+    }
 
 def main():
-    print("Hello World !")
-
     API.run()
 
 if __name__ == "__main__":

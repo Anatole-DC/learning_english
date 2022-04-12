@@ -11,7 +11,7 @@ ___
 
 **Author**: Anatole de Chauveron, Adrien Bassail, Henri Boulnois, Tristan Six, Astrid Djouhassi Djoumessi
 
-**Technos :** VueJS, Flask, Spacy
+**Technos :** VueJS, Flask, Spacy, Translate
 
 **Licence :** General Public Licence
 
