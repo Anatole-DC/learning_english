@@ -1,11 +1,13 @@
 from translate import Translator
 from flask import Blueprint, request, Response
+from flask_cors import CORS
 
 TRANSLATE = Blueprint("translate", __name__)
+CORS(TRANSLATE)
 
 translate_route = "/translate"
 
-@TRANSLATE.route(f"{translate_route}", methods=['GET'])
+@TRANSLATE.route(f"{translate_route}", methods=["POST"])
 def translate():
 
     try:

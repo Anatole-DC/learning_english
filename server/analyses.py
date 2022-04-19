@@ -1,15 +1,17 @@
+from flask_cors import CORS
 import spacy
 from spellchecker import SpellChecker
 from flask import Blueprint, request, Response
 
 ANALYSE = Blueprint("analyse", __name__)
+CORS(ANALYSE)
 
 analyse_route = "/analyse"
 
 nlp = spacy.load("en_core_web_sm")
 spell = SpellChecker()
 
-@ANALYSE.route(f"{analyse_route}", methods=['GET'])
+@ANALYSE.route(f"{analyse_route}", methods=['POST'])
 def analyse():
 
 
