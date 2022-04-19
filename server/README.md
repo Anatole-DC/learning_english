@@ -29,7 +29,7 @@ This is the Learning English NLP API documentation.
 
 ```json
 {
-    "sentence": "I am a computer science student, studying in the university of Lille."
+    "sentence": "I am a computer scientist, and I am currently studying in the university of Lille."
 }
 ```
 
@@ -71,8 +71,62 @@ This is the Learning English NLP API documentation.
         {
             "corrected": null,
             "suggestions": [],
+            "type": "PUNCT",
+            "word": ","
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "CCONJ",
+            "word": "and"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "PRON",
+            "word": "I"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "AUX",
+            "word": "am"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "ADV",
+            "word": "currently"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "VERB",
+            "word": "studying"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
             "type": "ADP",
             "word": "in"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "DET",
+            "word": "the"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "PROPN",
+            "word": "university"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "ADP",
+            "word": "of"
         },
         {
             "corrected": null,
@@ -87,21 +141,26 @@ This is the Learning English NLP API documentation.
             "word": "."
         }
     ],
-    "base_text": "I am a computer scientist in Lille.",
+    "base_text": "I am a computer scientist, and I am currently studying in the university of Lille.",
     "elements": {
         "entities": [
             [
-                "Lille",
-                384
+                "the university of Lille",
+                383
             ]
         ],
         "nouns": [
             "I",
             "a computer scientist",
+            "I",
+            "the university",
             "Lille"
         ],
-        "verbs": []
-    }
+        "verbs": [
+            "study"
+        ]
+    },
+    "text_corrected": null
 }
 ```
 
@@ -136,17 +195,69 @@ This is the Learning English NLP API documentation.
         },
         {
             "corrected": "scientist",
-            "suggestions": [
-                "scientist"
-            ],
+            "suggestions": [],
             "type": "NOUN",
-            "word": "scientis"
+            "word": "sientist"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "PUNCT",
+            "word": ","
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "CCONJ",
+            "word": "and"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "PRON",
+            "word": "I"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "AUX",
+            "word": "am"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "ADV",
+            "word": "currently"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "VERB",
+            "word": "studying"
         },
         {
             "corrected": null,
             "suggestions": [],
             "type": "ADP",
             "word": "in"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "DET",
+            "word": "the"
+        },
+        {
+            "corrected": "university",
+            "suggestions": [],
+            "type": "PROPN",
+            "word": "Universty"
+        },
+        {
+            "corrected": null,
+            "suggestions": [],
+            "type": "ADP",
+            "word": "of"
         },
         {
             "corrected": null,
@@ -161,20 +272,25 @@ This is the Learning English NLP API documentation.
             "word": "."
         }
     ],
-    "base_text": "I am a computer scientis in Lille.",
+    "base_text": "I am a computer sientist, and I am currently studying in the Universty of Lille.",
     "elements": {
         "entities": [
             [
-                "Lille",
-                384
+                "the university of Lille",
+                383
             ]
         ],
         "nouns": [
             "I",
-            "a computer scientis",
+            "a computer scientist",
+            "I",
+            "the university",
             "Lille"
         ],
-        "verbs": []
-    }
+        "verbs": [
+            "study"
+        ]
+    },
+    "text_corrected": "I am a computer scientist, and I am currently studying in the university of Lille."
 }
 ```
